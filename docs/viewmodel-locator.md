@@ -8,7 +8,7 @@ Add the `AutoWireViewModel` attached property to each View:
 <Window x:Class="Demo.Views.MainWindow"
     ...
     xmlns:prism="http://prismlibrary.com/"
-    prism:ViewModelLocator.AutoWireViewModel="True">
+    prism:ViewModelLocator.AutowireViewModel="True">
 ```
 
 To locate a ViewModel, the `ViewModelLocationProvider` first attempts to resolve the ViewModel from any mappings that may have been registered by the `ViewModelLocationProvider.Register` method (See [Custom ViewModel Registrations](#Custom-ViewModel-Registrations)).  If the ViewModel cannot be resolved using this approach, the `ViewModelLocationProvider` falls back to a convention-based approach to resolve the correct ViewModel type.  
